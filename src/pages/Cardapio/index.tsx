@@ -8,6 +8,9 @@ export default function Cardapio() {
         <Logo />
         Aluroni
     </nav>
+    <header className={styles.header}>
+      <div className={styles.header__text}></div>
+    </header>
    </main>
   )
 }
