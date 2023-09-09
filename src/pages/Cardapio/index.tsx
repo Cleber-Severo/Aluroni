@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {SetStateAction, useState} from 'react'
 import Buscador from './Buscador'
 import styles from './Cardapio.module.scss'
 import {ReactComponent as Logo } from 'assets/logo.svg'
@@ -9,7 +9,7 @@ import Itens from './Itens'
 export default function Cardapio() {
   const [busca, setBusca] = useState("");
   const [filtro, setFiltro] = useState<number | null>(null)
-  const [ordenador, setOrdenador] = useState("")
+  const [ordenador, setOrdenador] = useState<string>("");
 
   return (
     <main>
